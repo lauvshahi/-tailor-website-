@@ -1,33 +1,53 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "../styles/Navbar.css";
-import logo from "../assets/logo.jpg";
 
 function Navbar() {
-    return (
-        <nav className="navbar">
-            <div className="logo">
 
-                <img
-                    src={logo}
-                    alt="Tailor Logo"
-                    className="logo-image"
-                />
+  const [menuOpen, setMenuOpen] = useState(false);
 
-                <h2>Unique Tailoring Center</h2>
+  return (
 
-            </div>
+    <nav className="navbar">
 
-            <ul className="nav-links">
-                <li>Home</li>
-                <li>Services</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-            </ul>
+      <h2 className="logo">
+        Unique Tailoring Center
+      </h2>
 
-            <button className="contact-btn">
-                Book Now
-            </button>
-        </nav>
-    );
+      <div
+        className="menu"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </div>
+
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+
+        <li>
+          <Link to="/gallery">Gallery</Link>
+        </li>
+
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+
+        <li>
+          <Link to="/booking">Booking</Link>
+        </li>
+
+      </ul>
+
+    </nav>
+  );
 }
 
 export default Navbar;

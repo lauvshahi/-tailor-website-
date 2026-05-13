@@ -16,7 +16,7 @@ function Footer() {
           <p>📍 Basundhara, Kathmandu</p>
           <p>📞 9841473809</p>
           <p>📞 9869023389</p>
-          <p>✉️ uniquetailoring@gmail.com</p>
+          <p>✉️ uniquetailoringcenter@gmail.com</p>
         </div>
 
         <div className="footer-section">
