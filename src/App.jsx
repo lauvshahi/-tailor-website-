@@ -8,6 +8,7 @@ import ServicesPage from "./pages/ServicesPage";
 import GalleryPage from "./pages/GalleryPage";
 import Contact from "./pages/Contact";
 // import Booking from "./pages/Booking";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <WhatsAppButton />
 
     </BrowserRouter>
   );
