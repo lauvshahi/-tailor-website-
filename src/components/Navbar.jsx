@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 import "../styles/Navbar.css";
+
+import logo from "../assets/logo.jpg";
 
 function Navbar() {
 
@@ -11,9 +14,17 @@ function Navbar() {
 
     <nav className="navbar">
 
-      <h2 className="logo">
-        Unique Tailoring Center
-      </h2>
+      <div className="logo">
+
+  <img
+    src={logo}
+    alt="logo"
+    className="logo-image"
+  />
+
+  <h2>Unique Tailoring Center</h2>
+
+</div>
 
       <div
         className="menu"
