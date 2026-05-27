@@ -1,0 +1,47 @@
+.booking-container {
+
+  padding: 50px;
+
+  text-align: center;
+}
+
+.booking-container form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  max-width: 400px;
+
+  margin: auto;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+}
+
+.booking-container button {
+
+  padding: 12px;
+
+  background: black;
+
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.booking-container button:hover {
+  background: #333;
+}
