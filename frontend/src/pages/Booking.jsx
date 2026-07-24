@@ -1,18 +1,5 @@
-// import BookingForm from "../components/BookingForm";
-
-// export default function Booking() {
-//   return (
-//     <div>
-//       <h1>Booking Page</h1>
-
-//       {/* THIS MUST BE HERE */}
-//       <BookingForm />
-//     </div>
-//   );
-// }
 
 import { useState } from "react";
-
 export default function BookingForm() {
   const [form, setForm] = useState({
     name: "",
@@ -86,11 +73,12 @@ export default function BookingForm() {
 
           {/* Button */}
           <button
-            type="submit"
+            type="submit disabled={loading}"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300"
           >
             Confirm Booking
           </button>
+          
         </form>
       </div>
     </div>

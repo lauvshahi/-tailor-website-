@@ -9,6 +9,7 @@ import GalleryPage from "./pages/GalleryPage";
 import Contact from "./pages/Contact";
 import Services from "./components/Services";
 import BookingForm from "./components/BookingForm";
+import About from "./components/About";
 function App() {
 
   return (
@@ -42,6 +43,11 @@ function App() {
         <Route
           path="/booking"
           element={<BookingForm />}
+        />
+
+         <Route
+          path="/aboutus"
+          element={<About />}
         />
 
       </Routes>

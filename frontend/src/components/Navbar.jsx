@@ -55,6 +55,10 @@ function Navbar() {
           <Link to="/booking">Booking</Link>
         </li>
 
+          <li>
+          <Link to="/about">About us</Link>
+        </li>
+
       </ul>
 
     </nav>
