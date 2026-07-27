@@ -11,6 +11,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    
 
     <nav className="navbar">
 
@@ -53,6 +54,10 @@ function Navbar() {
 
         <li>
           <Link to="/booking">Booking</Link>
+        </li>
+
+          <li>
+          <Link to="/about">About us</Link>
         </li>
 
       </ul>
