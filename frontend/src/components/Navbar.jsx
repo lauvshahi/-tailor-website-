@@ -11,6 +11,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    
 
     <nav className="navbar">
 
