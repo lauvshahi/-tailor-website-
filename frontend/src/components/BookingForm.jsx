@@ -20,7 +20,7 @@ export default function BookingForm() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/bookings", form);
+      await axios.post("api/bookings", form);
       alert("Booking sent successfully!");
       setForm({
         name: "",

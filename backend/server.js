@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -7,7 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/tailorDB")
+// const mongoUrl = `mongodb+srv://gitstudy44_db_user:NLfUCre6NHUaG8g7@cluster0.a02zo3x.mongodb.net/?appName=Cluster0`
+// mongoose.connect("mongodb://127.0.0.1:27017/tailorDB")
+const mongoUrl = `mongodb://gitstudy44_db_user:NLfUCre6NHUaG8g7@ac-0ex38pq-shard-00-00.a02zo3x.mongodb.net:27017,ac-0ex38pq-shard-00-01.a02zo3x.mongodb.net:27017,ac-0ex38pq-shard-00-02.a02zo3x.mongodb.net:27017/?ssl=true&replicaSet=atlas-4p40p9-shard-0&authSource=admin&appName=Cluster0`
+mongoose.connect(mongoUrl)
 .then(() => {
   console.log("MongoDB Connected");
 })
@@ -32,7 +36,7 @@ const Booking = mongoose.model(
 );
 
 // API Route
-app.post("/bookings", async (req, res) => {
+app.post("/api/bookings", async (req, res) => {
 
   try {
 
